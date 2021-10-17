@@ -39,3 +39,11 @@ class StringCalculator {
     	return total;
     	
     }
+    private String[] splitNumbers(String numbers, String divider) {
+    	return numbers.split(divider);
+    	
+    }
+    pritate int toInt(String number) {
+    	return Integer.parseInt(number);
+    }
+    }
