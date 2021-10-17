@@ -29,5 +29,10 @@ class StringCalculatorShould {
     	assertEquals(10, stringCalculator.add("1,2,4,3"));
     	
     }
-    
+    @Test
+    void_string_with_multiple_numbers_on_diferent_lines_should_return_sum(){
+    	StringCalculator stringCalculator = new StringCalculator();
+    	assertEquals(10, stringCalculator.add("1\n2,4,3"));
+    	
+    }
 }
