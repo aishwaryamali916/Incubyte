@@ -30,9 +30,15 @@ class StringCalculatorShould {
     	
     }
     @Test
-    void_string_with_multiple_numbers_on_diferent_lines_should_return_sum(){
+    void string_with_multiple_numbers_on_diferent_lines_should_return_sum(){
     	StringCalculator stringCalculator = new StringCalculator();
     	assertEquals(10, stringCalculator.add("1\n2,4,3"));
+    	
+    }
+    @Test
+    void string_with_custom_delimeter_should_return_sum() {
+    	StringCalculator stringCalculator = new StringCalculator();
+    	assertEquals(9, stringCalculator.add("//:\n2:4:3"));
     	
     }
 }
